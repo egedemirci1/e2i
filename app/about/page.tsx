@@ -6,17 +6,18 @@ import PageShell, { PageContent } from "@/components/PageShell";
 export const metadata: Metadata = {
   title: "Hakkımızda — E2I",
   description:
-    "E2I vizyonu, AR-GE altyapısı ve teknoloji stack'imiz hakkında bilgi edinin.",
+    "E2I vizyonu, misyonu, çalışma yaklaşımı ve teknoloji altyapısı hakkında bilgi edinin.",
 };
 
 export default function AboutPage() {
   return (
     <PageShell>
-      <PageContent>
+      <PageContent noScroll>
         <PageHeader
           label="Hakkımızda"
-          title="Felsefemiz & Vizyonumuz"
-          description="Mühendislik disiplini ile yapay zekâ inovasyonunu bir araya getiren AR-GE odaklı teknoloji firması."
+          title="Engineering to Intelligence"
+          description="Mühendislik disiplini ile dijital inovasyonu birleştiren teknoloji stüdyosu."
+          compact
         />
         <AboutTabs />
       </PageContent>

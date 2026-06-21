@@ -5,70 +5,169 @@ import CaseStudyCard from "@/components/CaseStudyCard";
 
 const caseStudies = [
   {
-    id: "route",
-    tab: "Rota Optimizasyonu",
-    title: "Saha Satış Operasyonları İçin Yürüyüş Rotası Optimizasyon Tool'u",
-    industry: "Saha Operasyonları",
+    id: "automation",
+    tab: "AI Otomasyon",
+    title: "Lojistik Firması İçin AI Destekli Fatura ve Operasyon Otomasyonu",
+    industry: "Lojistik & Tedarik Zinciri",
     steps: [
       {
         label: "Sorun",
-        title: "Manuel Rota Planlama",
+        title: "Dağınık Operasyon ve Manuel Süreçler",
         description:
-          "Saha satış ekipleri günlük ziyaret rotalarını manuel planlıyordu. Optimal olmayan rotalar zaman kaybına yol açıyordu.",
+          "Orta ölçekli bir lojistik operatörü, günlük 800+ fatura ve sevkiyat belgesini e-posta ve Excel üzerinden manuel işliyordu. Veri giriş hataları gecikmelere ve müşteri memnuniyetsizliğine yol açıyordu.",
       },
       {
         label: "Mühendislik Çözümü",
-        title: "Greedy Nearest-Neighbor",
+        title: "Uçtan Uca Otomasyon Pipeline'ı",
         description:
-          "Mesafe matrisi tabanlı Greedy Nearest-Neighbor algoritması ile rota optimizasyonu geliştirildi.",
+          "Belge alımı, OCR tabanlı metin çıkarımı ve doğrulama adımlarını kapsayan event-driven bir pipeline tasarlandı. ERP ile çift yönlü API entegrasyonu kurularak veri akışı otomatikleştirildi.",
       },
       {
         label: "Yapay Zekâ Entegrasyonu",
-        title: "Tahminsel Ziyaret Sıralaması",
+        title: "Sınıflandırma ve Anomali Tespiti",
         description:
-          "Geçmiş ziyaret verileri ile müşteri önceliklendirme ve dinamik rota güncelleme entegre edildi.",
+          "LLM destekli sınıflandırma modeli belge türlerini otomatik ayırdı; anomali skorlaması şüpheli kayıtları operasyon ekibine öncelikli iletti. İnsan-onaylı (human-in-the-loop) akış kritik kararları güvence altına aldı.",
       },
       {
         label: "Sonuç",
-        title: "Operasyonel Verimlilik",
+        title: "Ölçülebilir Operasyonel Kazanım",
         description:
-          "Saha ekipleri %40 zaman tasarrufu elde etti. Ziyaret kapasitesi ortalama %25 arttı.",
+          "Fatura işleme süresi %70 kısaldı, manuel veri girişinden yıllık 480 saat tasarruf sağlandı. İşlem hata oranı %12'den %1,8'e düştü.",
       },
     ],
-    highlight: "%40 zaman tasarrufu, %25 artan ziyaret kapasitesi",
+    highlight: "%70 daha hızlı fatura işleme, yıllık 480 saat tasarruf",
   },
   {
-    id: "content",
-    tab: "İçerik Platformu",
-    title: "AI Destekli İçerik Otomasyonu ve Pazarlama Platformu",
-    industry: "Dijital Pazarlama",
+    id: "web",
+    tab: "Web Geliştirme",
+    title: "İmalat Firması İçin Kurumsal Portal ve Canlı Üretim Paneli",
+    industry: "İmalat & Sanayi",
     steps: [
       {
         label: "Sorun",
-        title: "Manuel İçerik Üretimi",
+        title: "Parçalanmış Dijital Varlık",
         description:
-          "Pazarlama ekibi içerik üretimini manuel yürütüyor, performans metriklerini ayrı araçlarda takip ediyordu.",
+          "Ulusal ölçekte bir üretim firmasının web sitesi, bayi portalı ve iç raporlama araçları birbirinden kopuktu. Müşteriler stok ve üretim durumuna anlık erişemiyor, satış ekibi 6 farklı sisteme giriş yapmak zorundaydı.",
       },
       {
         label: "Mühendislik Çözümü",
-        title: "API Pipeline & Meta",
+        title: "Next.js Tabanlı Birleşik Platform",
         description:
-          "Meta Graph API entegrasyonu ile otomatik içerik yayınlama pipeline'ı kuruldu.",
+          "Next.js ve TypeScript ile SEO uyumlu kurumsal site, bayi portalı ve yönetim paneli tek mimari altında birleştirildi. PostgreSQL ve Redis katmanı ile yüksek trafikte stabil yanıt süreleri hedeflendi.",
       },
       {
-        label: "Yapay Zekâ Entegrasyonu",
-        title: "Otomatik İçerik Üretimi",
+        label: "Platform Entegrasyonu",
+        title: "Gerçek Zamanlı Üretim Verisi",
         description:
-          "LLM modelleri ile marka tonuna uygun içerik üretimi ve performans bazlı optimizasyon sağlandı.",
+          "Mevcut MES ve ERP sistemlerinden WebSocket ve REST API ile canlı üretim, stok ve sevkiyat verisi çekildi. Role-based erişim ile bayi, satış ve yönetim ekranları kişiselleştirildi.",
       },
       {
         label: "Sonuç",
-        title: "Üretim Hızında Artış",
+        title: "Tek Merkezden Yönetim",
         description:
-          "İçerik üretim hızı 5 kat arttı. Performans analitiği tek platformda birleştirildi.",
+          "Sayfa yükleme süreleri %45 iyileşti, 6 ayrı giriş noktası tek panele indirildi. Bayi sorgu yanıt süresi ortalama 4,2 saniyeden 0,9 saniyeye düştü.",
       },
     ],
-    highlight: "5x üretim hızı artışı, birleşik performans analitiği",
+    highlight: "%45 daha hızlı performans, 6 sistem tek panelde birleşti",
+  },
+  {
+    id: "game",
+    tab: "Oyun Geliştirme",
+    title: "Perakende Markası İçin Marka Aktivasyon Mobil Oyunu",
+    industry: "Perakende & Marka Deneyimi",
+    steps: [
+      {
+        label: "Sorun",
+        title: "Düşük Kampanya Etkileşimi",
+        description:
+          "Genç hedef kitlesine sahip bir perakende markası, sezonluk kampanyalarında mağaza trafiğini artıramıyordu. Klasik indirim iletişimi dijital kanallarda düşük etkileşim ve sınırlı tekrar ziyaret üretiyordu.",
+      },
+      {
+        label: "Mühendislik Çözümü",
+        title: "Unity ile Hyper-Casual Oyun",
+        description:
+          "Unity tabanlı, 90 saniyelik oyun döngüsüne sahip bir mobil oyun prototiplendi. Skor tablosu, günlük görevler ve mağaza QR kodu entegrasyonu ile fiziksel-dijital köprü kuruldu.",
+      },
+      {
+        label: "Oyun Tasarımı",
+        title: "Ödül Mekanizması ve Gamification",
+        description:
+          "Oyuncu ilerlemesi mağaza kuponları ve sadakat puanlarına dönüştürüldü. A/B testleri ile zorluk eğrisi optimize edilerek 7. gün retention %34'e çıkarıldı.",
+      },
+      {
+        label: "Sonuç",
+        title: "Kampanya Döneminde Güçlü Trafik",
+        description:
+          "Oyun 8 haftada 250.000+ indirme aldı. Kampanya süresince mağaza ziyaretlerinde %38 artış ve uygulama içi kupon kullanım oranı %22 olarak ölçüldü.",
+      },
+    ],
+    highlight: "250K+ indirme, mağaza trafiğinde %38 artış",
+  },
+  {
+    id: "design",
+    tab: "Tasarım",
+    title: "B2B SaaS Startup İçin Kurumsal Kimlik ve 3D Ürün Tanıtımı",
+    industry: "B2B Teknoloji",
+    steps: [
+      {
+        label: "Sorun",
+        title: "Tutarsız Marka Algısı",
+        description:
+          "Seri A aşamasındaki bir B2B SaaS girişimi, yatırımcı sunumları ve satış toplantılarında tutarsız görsel dil nedeniyle premium algıyı yansıtamıyordu. Ürünün teknik gücü anlatılıyor ancak güven veren bir marka kimliği eksikti.",
+      },
+      {
+        label: "Mühendislik Çözümü",
+        title: "Kurumsal Kimlik Sistemi",
+        description:
+          "Logo, renk paleti, tipografi ve grid sistemi içeren kapsamlı bir brand guide oluşturuldu. Pitch deck, web arayüzü ve sosyal medya şablonları tek görsel dil altında standardize edildi.",
+      },
+      {
+        label: "Tasarım & Prodüksiyon",
+        title: "3D Ürün Animasyonu",
+        description:
+          "Blender ile ürün mimarisini anlatan 45 saniyelik 3D tanıtım animasyonu üretildi. Web sitesi hero alanı ve LinkedIn kampanyaları için optimize edilmiş kısa format versiyonlar hazırlandı.",
+      },
+      {
+        label: "Sonuç",
+        title: "Güçlenen Marka Konumlandırması",
+        description:
+          "Yenilenen kimlik sonrası yatırımcı sunumlarında slayt etkileşim süresi %60 arttı. Web sitesi bounce rate %41'den %26'ya düştü, demo talep formu dönüşümü 2,1 kat yükseldi.",
+      },
+    ],
+    highlight: "Demo taleplerinde 2,1x artış, bounce rate %26'ya düştü",
+  },
+  {
+    id: "social",
+    tab: "Sosyal Medya Yönetimi",
+    title: "Restoran Zinciri İçin Sosyal Medya ve İçerik Otomasyon Platformu",
+    industry: "Yeme-İçme & Franchise",
+    steps: [
+      {
+        label: "Sorun",
+        title: "Franchise Bağımsız İçerik Kaosu",
+        description:
+          "12 şubeli bir restoran zinciri, her lokasyonun farklı ton ve görsel kalitede paylaşım yapması nedeniyle marka bütünlüğünü koruyamıyordu. İçerik üretimi yavaş, performans raporlaması dağınıktı.",
+      },
+      {
+        label: "Mühendislik Çözümü",
+        title: "Merkezi İçerik Yönetim Paneli",
+        description:
+          "Meta Graph API entegrasyonlu merkezi bir panel geliştirildi. Onay akışı, içerik takvimi ve şube bazlı yayın planlaması tek arayüzden yönetilebilir hale getirildi.",
+      },
+      {
+        label: "Büyüme Stratejisi",
+        title: "Veri Odaklı İçerik Optimizasyonu",
+        description:
+          "Etkileşim, erişim ve rezervasyon dönüşüm metrikleri dashboard'a taşındı. En yüksek performanslı formatlar tespit edilerek içerik stratejisi haftalık döngülerle güncellendi.",
+      },
+      {
+        label: "Sonuç",
+        title: "Organik Büyüme ve Maliyet Verimliliği",
+        description:
+          "4 ayda organik erişim 3,2 kat arttı, reklam başına tıklama maliyeti %28 düştü. Şubeler arası marka tutarlılık skoru iç denetimde %92'ye yükseldi.",
+      },
+    ],
+    highlight: "4 ayda 3,2x organik erişim, reklam maliyetinde %28 düşüş",
   },
 ];
 
@@ -77,8 +176,8 @@ export default function CaseStudiesView() {
   const current = caseStudies.find((c) => c.id === active)!;
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col">
-      <div className="mb-4 flex shrink-0 flex-wrap gap-2 sm:gap-3">
+    <div className="flex flex-col">
+      <div className="mb-4 flex flex-wrap gap-2 sm:gap-3">
         {caseStudies.map((study) => (
           <button
             key={study.id}
@@ -94,9 +193,7 @@ export default function CaseStudiesView() {
           </button>
         ))}
       </div>
-      <div className="min-h-0 flex-1 overflow-y-auto lg:overflow-hidden">
-        <CaseStudyCard {...current} compact />
-      </div>
+      <CaseStudyCard {...current} compact />
     </div>
   );
 }

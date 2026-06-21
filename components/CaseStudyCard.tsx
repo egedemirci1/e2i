@@ -22,7 +22,7 @@ export default function CaseStudyCard({
   return (
     <article
       className={`card-glow group rounded-2xl bg-[#13233c]/60 backdrop-blur-sm ${
-        compact ? "h-full p-5 sm:p-6" : "p-8 lg:p-10"
+        compact ? "p-5 sm:p-6" : "p-8 lg:p-10"
       }`}
     >
       <div className={compact ? "mb-4" : "mb-8"}>
@@ -34,13 +34,21 @@ export default function CaseStudyCard({
         </h2>
       </div>
 
-      <div className="relative space-y-0">
+      <div
+        className={
+          compact
+            ? "grid gap-3 sm:grid-cols-2 sm:gap-4"
+            : "relative space-y-0"
+        }
+      >
         {steps.map((step, index) => (
           <div
             key={step.label}
-            className={`relative flex gap-4 ${compact ? "pb-4 last:pb-0" : "gap-6 pb-8 last:pb-0"}`}
+            className={`relative flex gap-3 ${
+              compact ? "" : "gap-6 pb-8 last:pb-0"
+            }`}
           >
-            {index < steps.length - 1 && (
+            {!compact && index < steps.length - 1 && (
               <div className="absolute left-[15px] top-8 h-[calc(100%-16px)] w-px bg-gradient-to-b from-e2i-accent/50 to-e2i-accent/10" />
             )}
             <div className="relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-e2i-accent/30 bg-[#0a1220] text-xs font-bold text-e2i-accent">

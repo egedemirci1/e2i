@@ -6,7 +6,7 @@ import PageShell, { PageContent } from "@/components/PageShell";
 export const metadata: Metadata = {
   title: "Başarı Hikayeleri — E2I",
   description:
-    "Engineering aşamasından Intelligence aşamasına geçişi kanıtlayan vaka analizleri.",
+    "AI otomasyon, web, oyun, tasarım ve sosyal medya alanlarında örnek başarı senaryoları.",
 };
 
 export default function CaseStudiesPage() {
@@ -16,7 +16,7 @@ export default function CaseStudiesPage() {
         <PageHeader
           label="Başarı Hikayeleri"
           title="Engineering'den Intelligence'a"
-          description="Gerçek projelerden gerçek sonuçlar — mühendislik ve yapay zekânın kesişimi."
+          description="Çözüm alanlarımıza paralel örnek vaka senaryoları — sorundan ölçülebilir sonuca."
         />
         <CaseStudiesView />
       </PageContent>

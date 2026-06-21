@@ -5,9 +5,19 @@ interface PageShellProps {
   centered?: boolean;
 }
 
-export function PageContent({ children }: { children: React.ReactNode }) {
+export function PageContent({
+  children,
+  noScroll = false,
+}: {
+  children: React.ReactNode;
+  noScroll?: boolean;
+}) {
   return (
-    <div className="mx-auto flex h-full min-h-0 w-full max-w-7xl flex-col pt-6 sm:pt-8">
+    <div
+      className={`mx-auto flex h-full min-h-0 w-full max-w-7xl flex-col pt-4 pb-4 sm:pt-7 sm:pb-8 ${
+        noScroll ? "overflow-y-auto lg:overflow-hidden" : "overflow-y-auto"
+      }`}
+    >
       {children}
     </div>
   );
